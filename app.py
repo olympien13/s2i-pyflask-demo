@@ -7,11 +7,11 @@ def hello_world():
 
 @app.route('/version')
 def get_version():
-    return '<h1>App version : <b>2.0</b></h1>'
+    return '<h1>App version : <b>1.0</b></h1>'
 
 @app.route('/test')
 def get_test():
-    return '<h1>You are accessing /test endpoint - NEW VERSION</h1>'
+    return '<h1>You are accessing /test endpoint</h1>'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
